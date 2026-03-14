@@ -42,18 +42,18 @@ public class LoginTest extends BaseTest {
             throw new RuntimeException(e);
         }
 
-//        //CHỤP TOÀN BỘ MÀN HÌNH (KHÔNG gồm Taskbar)
-//        CaptureHelper.screenshot("loginSuccessCaptureScreenShot");
-//
-//        //CHỤP FULL TOÀN BỘ MÀN HÌNH BẰNG ASHOT (thư viện ngoài)
-//        Screenshot screenshot = new AShot()
-//                .shootingStrategy(ShootingStrategies.viewportPasting(1000)) // Cuộn sau mỗi 1s
-//                .takeScreenshot(DriverManager.getDriver());
-//        try {
-//            ImageIO.write(screenshot.getImage(), "PNG", new File("full_page_ashot.png"));
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
+        //CHỤP TOÀN BỘ MÀN HÌNH (KHÔNG gồm Taskbar)
+        CaptureHelper.screenshot("loginSuccessCaptureScreenShot");
+
+        //CHỤP FULL TOÀN BỘ MÀN HÌNH BẰNG ASHOT (thư viện ngoài)
+        Screenshot screenshot = new AShot()
+                .shootingStrategy(ShootingStrategies.viewportPasting(1000)) // Cuộn sau mỗi 1s
+                .takeScreenshot(DriverManager.getDriver());
+        try {
+            ImageIO.write(screenshot.getImage(), "PNG", new File("full_page_ashot.png"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         loginPage.verifyLoginSuccess();
     }
