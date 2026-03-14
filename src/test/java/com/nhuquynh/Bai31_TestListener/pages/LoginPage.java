@@ -1,4 +1,4 @@
-package com.nhuquynh.Bai30_Screenshot_Video.pages;
+package com.nhuquynh.Bai31_TestListener.pages;
 
 import com.nhuquynh.Common.Locators;
 import com.nhuquynh.drivers.DriverManager;
@@ -36,12 +36,12 @@ public class LoginPage {
     public void loginCRM(String email, String password) { //chạy automation login, verify là 2 hàm trên
         WebUI.openURL(PropertiesHelper.getValue("URL"));
         WebUI.waitForPageLoaded();
-        CaptureHelper.captureScreenshot("stepNavigateToURL");
+//        CaptureHelper.captureScreenshot("stepNavigateToURL");
         WebUI.clearText(inputEmail);
         WebUI.clearText(inputPassword);
         WebUI.setText(inputEmail, email);
         WebUI.setText(inputPassword, password);
-        CaptureHelper.captureScreenshot("stepEnterEmailPassword");
+//        CaptureHelper.captureScreenshot("stepEnterEmailPassword");
         WebUI.clickElement(buttonLogin);
     }
 

@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite Listener Login Test" verbose="1">
+
+    <listeners>
+        <listener class-name="com.nhuquynh.listeners.TestListener"/>
+    </listeners>
+    
+    
+    <test name="Login Test with Chrome">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.nhuquynh.Bai31_TestListener.testcases.LoginTest">
+                <methods>
+                    <include name="loginSuccess"/>
+                </methods>
+            </class>
+            
+            <class name="com.nhuquynh.Bai31_TestListener.DemoListener"></class>
+        </classes>
+    </test>
+
+</suite>

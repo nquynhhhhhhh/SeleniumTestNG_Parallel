@@ -1,7 +1,9 @@
 package com.nhuquynh.Common;
 
 import com.nhuquynh.drivers.DriverManager;
+import com.nhuquynh.helpers.CaptureHelper;
 import com.nhuquynh.helpers.PropertiesHelper;
+import com.nhuquynh.listeners.TestListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,6 +11,7 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
+@Listeners(TestListener.class)
 public class BaseTest {
 
     @BeforeSuite
@@ -49,6 +52,8 @@ public class BaseTest {
     }
     @AfterMethod
     public void closeDriver() {
+        CaptureHelper.stopRecord(1);
+        //record kh hỗ trợ parallel (nếu muốn song song và record, thì chỉ record cái TC cuối cùng hiển thị lên màn hình)
         if (DriverManager.getDriver() != null) {
             DriverManager.quit();
         }

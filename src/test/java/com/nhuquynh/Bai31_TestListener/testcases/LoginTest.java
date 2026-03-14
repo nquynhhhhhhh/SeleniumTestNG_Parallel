@@ -1,25 +1,14 @@
-package com.nhuquynh.Bai30_Screenshot_Video.testcases;
+package com.nhuquynh.Bai31_TestListener.testcases;
 
-import com.nhuquynh.Bai30_Screenshot_Video.pages.LoginPage;
+import com.nhuquynh.Bai31_TestListener.pages.LoginPage;
 import com.nhuquynh.Common.BaseTest;
 import com.nhuquynh.dataproviders.DataProviderFactory;
-import com.nhuquynh.drivers.DriverManager;
 import com.nhuquynh.helpers.CaptureHelper;
-import com.nhuquynh.keywords.WebUI;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.io.FileHandler;
+import com.nhuquynh.listeners.TestListener;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.util.Date;
 import java.util.Hashtable;
 
 public class LoginTest extends BaseTest {
@@ -27,42 +16,9 @@ public class LoginTest extends BaseTest {
     LoginPage loginPage;
     @Test(priority = 1, dataProvider = "data_provider_login_success", dataProviderClass = DataProviderFactory.class)
     public void loginSuccess(String email, String password) throws AWTException {
-        CaptureHelper.startRecord("loginSuccessRecord");
-
         loginPage = new LoginPage(); //khởi tạo browser ở BaseTest trước rồi nên driver đã có giá trị => chỗ này cũng sẽ mang giá trị
         loginPage.loginCRM(email,password);
-
-        //1. CHỤP TOÀN BỘ MÀN HÌNH (KHÔNG gồm Taskbar)
-        CaptureHelper.captureScreenshot("loginSuccessCaptureScreenShot");
-
-//        //2. CHỤP TOÀN BỘ MÀN HÌNH (bao gồm Taskbar) bằng Robot
-//        Robot robot = new Robot();
-//        // Lấy kích thước toàn bộ màn hình (Resolution hiện tại của Windows 11)
-//        Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
-//        // Chụp ảnh màn hình
-//        BufferedImage screenFullImage = robot.createScreenCapture(screenRect);
-//        // Lưu file
-//        try {
-//            ImageIO.write(screenFullImage, "png", new File("full_desktop_with_taskbar.png"));
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//
-//        //3. CHỤP FULL TOÀN BỘ MÀN HÌNH BẰNG ASHOT (thư viện ngoài)
-//        Screenshot screenshot = new AShot()
-//                .shootingStrategy(ShootingStrategies.viewportPasting(1000)) // Cuộn sau mỗi 1s
-//                .takeScreenshot(DriverManager.getDriver());
-//        try {
-//            ImageIO.write(screenshot.getImage(), "PNG", new File("full_page_ashot.png"));
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-
-//        WebUI.sleep(1);
-//        CaptureHelper.stopRecord(1); //có thể đặt ở đây, tắt record trước mới verify, vì sợ fail nó kh chạy đoạn code stop record
-        //tốt hơn thì có thể đặt bên BaseTest ở closeDriver()
         loginPage.verifyLoginSuccess();
-
     }
 
     //@Test(priority = 1, dataProvider = "data_provider_login_excel", dataProviderClass = DataProviderFactory.class)
