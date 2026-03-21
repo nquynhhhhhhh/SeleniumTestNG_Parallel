@@ -15,7 +15,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onStart(ITestContext result) {
         System.out.println("Setup môi trường onStart: " + result.getStartDate());
-        CaptureHelper.startRecord("VideoSuite01"); //
+        //CaptureHelper.startRecord("VideoSuite01");
         //Load file Properties cofig
         PropertiesHelper.loadAllFiles();
 
@@ -30,7 +30,7 @@ public class TestListener implements ITestListener {
         System.out.println("Test Passed Total: " +test_passed_total);
         System.out.println("Test Failed Total: " +test_failed_total);
         System.out.println("Test Skipped Total: " +test_skipped_total);
-        CaptureHelper.stopRecord(1); //chỉ reocord được TC cuối
+        //CaptureHelper.stopRecord(1); //chỉ record được TC cuối
         //Gửi mail
         //Xuất report
 
@@ -42,7 +42,7 @@ public class TestListener implements ITestListener {
         //ghi vào report chi tiết từng bước
         System.out.println("Bắt đầu chạy test case: " + result.getName());
         test_total++;
-//        CaptureHelper.startRecord(result.getName());
+        CaptureHelper.startRecord(result.getName());
     }
 
     @Override
@@ -50,7 +50,7 @@ public class TestListener implements ITestListener {
         System.out.println("Test case " + result.getName() + " is passed.");
         System.out.println("==> Status: " + result.getStatus());
         test_passed_total++;
-//        CaptureHelper.stopRecord(1);
+        CaptureHelper.stopRecord(1);
     }
 
     @Override
@@ -59,7 +59,7 @@ public class TestListener implements ITestListener {
         System.out.println("==> Status: " + result.getStatus());
         test_failed_total++;
         CaptureHelper.captureScreenshot(result.getName());
-//        CaptureHelper.stopRecord(1);
+        CaptureHelper.stopRecord(1);
 
         //Tạo ticket Jira
         //Gửi evidence và logs lên Slack/MSTeam...
