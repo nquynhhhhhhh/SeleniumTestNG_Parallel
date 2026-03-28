@@ -1,0 +1,137 @@
+[INFO] 21-03-2026 15:40:08 [main] LogUtils - Setup môi trường onStart: Sat Mar 21 15:40:06 GMT+07:00 2026
+[INFO] 21-03-2026 15:40:14 [TestNG-PoolService-1] LogUtils - Bắt đầu chạy test case: loginSuccess
+[INFO] 21-03-2026 15:40:15 [TestNG-PoolService-1] LogUtils - Chạy testcase Login Success
+[INFO] 21-03-2026 15:40:28 [TestNG-PoolService-1] LogUtils - Test case loginSuccess is passed.
+[INFO] 21-03-2026 15:40:28 [TestNG-PoolService-1] LogUtils - ==> Status: 1
+[INFO] 21-03-2026 15:40:30 [main] LogUtils - Kết thúc bộ test: Sat Mar 21 15:40:30 GMT+07:00 2026
+[INFO] 21-03-2026 15:40:30 [main] LogUtils - Test Total: 1
+[INFO] 21-03-2026 15:40:30 [main] LogUtils - Test Passed Total: 1
+[INFO] 21-03-2026 15:40:30 [main] LogUtils - Test Failed Total: 0
+[INFO] 21-03-2026 15:40:30 [main] LogUtils - Test Skipped Total: 0
+[INFO] 21-03-2026 15:46:30 [main] LogUtils - Setup môi trường onStart: Sat Mar 21 15:46:29 GMT+07:00 2026
+[INFO] 21-03-2026 15:46:36 [TestNG-PoolService-1] LogUtils - Bắt đầu chạy test case: loginSuccess
+[INFO] 21-03-2026 15:46:37 [TestNG-PoolService-1] LogUtils - Chạy testcase Login Success
+[INFO] 21-03-2026 15:46:37 [TestNG-PoolService-1] LogUtils - 
+[INFO] 21-03-2026 15:46:38 [TestNG-PoolService-1] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 15:46:39 [TestNG-PoolService-1] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 15:46:40 [TestNG-PoolService-1] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 15:46:41 [TestNG-PoolService-1] LogUtils - Set text admin@example.com on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 15:46:42 [TestNG-PoolService-1] LogUtils - Set text 123456 on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 15:46:44 [TestNG-PoolService-1] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 21-03-2026 15:46:45 [TestNG-PoolService-1] LogUtils - Test case loginSuccess is passed.
+[INFO] 21-03-2026 15:46:45 [TestNG-PoolService-1] LogUtils - ==> Status: 1
+[INFO] 21-03-2026 15:46:47 [main] LogUtils - Kết thúc bộ test: Sat Mar 21 15:46:47 GMT+07:00 2026
+[INFO] 21-03-2026 15:46:47 [main] LogUtils - Test Total: 1
+[INFO] 21-03-2026 15:46:47 [main] LogUtils - Test Passed Total: 1
+[INFO] 21-03-2026 15:46:47 [main] LogUtils - Test Failed Total: 0
+[INFO] 21-03-2026 15:46:47 [main] LogUtils - Test Skipped Total: 0
+[INFO] 21-03-2026 15:53:09 [main] LogUtils - Setup môi trường onStart: Sat Mar 21 15:53:07 GMT+07:00 2026
+[INFO] 21-03-2026 15:53:16 [TestNG-PoolService-1] LogUtils - Bắt đầu chạy test case: loginSuccess
+[INFO] 21-03-2026 15:53:16 [TestNG-PoolService-1] LogUtils - Chạy testcase Login Success
+[INFO] 21-03-2026 15:53:16 [TestNG-PoolService-1] LogUtils - 
+[INFO] 21-03-2026 15:53:17 [TestNG-PoolService-1] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 15:53:18 [TestNG-PoolService-1] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 15:53:20 [TestNG-PoolService-1] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 15:53:21 [TestNG-PoolService-1] LogUtils - Set text admin123@example.com on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 15:53:24 [TestNG-PoolService-1] LogUtils - Set text 123456 on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 15:53:26 [TestNG-PoolService-1] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[ERROR] 21-03-2026 15:53:26 [TestNG-PoolService-1] LogUtils - Test case loginSuccess is failed.
+[ERROR] 21-03-2026 15:53:26 [TestNG-PoolService-1] LogUtils - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Dashboard']"}
+  (Session info: chrome=146.0.7680.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bee76abbf782a6a3ccefef545c525c7b, findElement {value=//span[normalize-space()='Dashboard'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.81, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63176}, goog:processID: 14508, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63176/devtoo..., se:cdpVersion: 146.0.7680.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bee76abbf782a6a3ccefef545c525c7b
+[INFO] 21-03-2026 15:53:27 [main] LogUtils - Kết thúc bộ test: Sat Mar 21 15:53:27 GMT+07:00 2026
+[INFO] 21-03-2026 15:53:27 [main] LogUtils - Test Total: 1
+[INFO] 21-03-2026 15:53:27 [main] LogUtils - Test Passed Total: 0
+[INFO] 21-03-2026 15:53:27 [main] LogUtils - Test Failed Total: 1
+[INFO] 21-03-2026 15:53:27 [main] LogUtils - Test Skipped Total: 0
+[INFO] 21-03-2026 16:30:16 [main] LogUtils - Setup môi trường onStart: Sat Mar 21 16:30:16 GMT+07:00 2026
+[INFO] 21-03-2026 16:30:19 [TestNG-PoolService-1] LogUtils - Bắt đầu chạy test case: loginSuccess
+[INFO] 21-03-2026 16:30:19 [TestNG-PoolService-1] LogUtils - 
+[INFO] 21-03-2026 16:30:21 [TestNG-PoolService-1] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 16:30:22 [TestNG-PoolService-1] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:23 [TestNG-PoolService-1] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:23 [TestNG-PoolService-1] LogUtils - Set text admin@example.com on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:24 [TestNG-PoolService-1] LogUtils - Set text 123456 on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:25 [TestNG-PoolService-1] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 21-03-2026 16:30:27 [TestNG-PoolService-1] LogUtils - Test case loginSuccess is passed.
+[INFO] 21-03-2026 16:30:29 [main] LogUtils - Bắt đầu chạy test case: loginFailWithEmailInvalid
+[INFO] 21-03-2026 16:30:29 [main] LogUtils - 
+[INFO] 21-03-2026 16:30:29 [main] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 16:30:30 [main] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:31 [main] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:31 [main] LogUtils - Set text admin123@example.com on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:32 [main] LogUtils - Set text 123456 on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:33 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 21-03-2026 16:30:33 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-danger')]
+[INFO] 21-03-2026 16:30:33 [main] LogUtils - ==> TEXT: Invalid email or password
+[INFO] 21-03-2026 16:30:33 [main] LogUtils - Test case loginFailWithEmailInvalid is passed.
+[INFO] 21-03-2026 16:30:35 [main] LogUtils - Bắt đầu chạy test case: loginFailWithPassInvalid
+[INFO] 21-03-2026 16:30:35 [main] LogUtils - 
+[INFO] 21-03-2026 16:30:36 [main] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 16:30:37 [main] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:37 [main] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:38 [main] LogUtils - Set text admin@example.com on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:39 [main] LogUtils - Set text 111 on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:40 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 21-03-2026 16:30:40 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-danger')]
+[INFO] 21-03-2026 16:30:40 [main] LogUtils - ==> TEXT: Invalid email or password
+[INFO] 21-03-2026 16:30:40 [main] LogUtils - Test case loginFailWithPassInvalid is passed.
+[INFO] 21-03-2026 16:30:43 [main] LogUtils - Bắt đầu chạy test case: loginFailWithEmailNull
+[INFO] 21-03-2026 16:30:43 [main] LogUtils - 
+[INFO] 21-03-2026 16:30:44 [main] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 16:30:45 [main] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:46 [main] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:46 [main] LogUtils - Set text  on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:47 [main] LogUtils - Set text 123456 on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:48 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 21-03-2026 16:30:48 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-danger')]
+[INFO] 21-03-2026 16:30:48 [main] LogUtils - ==> TEXT: The Email Address field is required.
+[INFO] 21-03-2026 16:30:48 [main] LogUtils - Test case loginFailWithEmailNull is passed.
+[INFO] 21-03-2026 16:30:52 [main] LogUtils - Bắt đầu chạy test case: loginFailWithPassNull
+[INFO] 21-03-2026 16:30:52 [main] LogUtils - 
+[INFO] 21-03-2026 16:30:54 [main] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 16:30:54 [main] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:55 [main] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:56 [main] LogUtils - Set text admin@example.com on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:30:57 [main] LogUtils - Set text  on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:30:58 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 21-03-2026 16:30:58 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-danger')]
+[INFO] 21-03-2026 16:30:58 [main] LogUtils - ==> TEXT: The Password field is required.
+[INFO] 21-03-2026 16:30:58 [main] LogUtils - Test case loginFailWithPassNull is passed.
+[INFO] 21-03-2026 16:31:03 [main] LogUtils - Bắt đầu chạy test case: loginFailWithNullFields
+[INFO] 21-03-2026 16:31:03 [main] LogUtils - 
+[INFO] 21-03-2026 16:31:05 [main] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[INFO] 21-03-2026 16:31:07 [main] LogUtils - Clear text on element: By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:31:08 [main] LogUtils - Clear text on element: By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:31:09 [main] LogUtils - Set text  on element By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:31:10 [main] LogUtils - Set text  on element By.xpath: //input[@id='password']
+[INFO] 21-03-2026 16:31:11 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 21-03-2026 16:31:11 [main] LogUtils - Get text of element By.xpath: (//div[contains(@class,'alert-danger')])[1]
+[INFO] 21-03-2026 16:31:11 [main] LogUtils - ==> TEXT: The Password field is required.
+[INFO] 21-03-2026 16:31:12 [main] LogUtils - Get text of element By.xpath: (//div[contains(@class,'alert-danger')])[2]
+[INFO] 21-03-2026 16:31:12 [main] LogUtils - ==> TEXT: The Email Address field is required.
+[INFO] 21-03-2026 16:31:12 [main] LogUtils - Get text of element By.xpath: (//div[contains(@class,'alert-danger')])[2]
+[INFO] 21-03-2026 16:31:12 [main] LogUtils - ==> TEXT: The Email Address field is required.
+[INFO] 21-03-2026 16:31:12 [main] LogUtils - Test case loginFailWithNullFields is passed.
+[INFO] 21-03-2026 16:31:13 [main] LogUtils - Kết thúc bộ test: Sat Mar 21 16:31:13 GMT+07:00 2026
+[INFO] 21-03-2026 16:31:13 [main] LogUtils - Test Total: 6
+[INFO] 21-03-2026 16:31:13 [main] LogUtils - Test Passed Total: 6
+[INFO] 21-03-2026 16:31:13 [main] LogUtils - Test Failed Total: 0
+[INFO] 21-03-2026 16:31:13 [main] LogUtils - Test Skipped Total: 0
+[INFO] 21-03-2026 16:37:37 [main] LogUtils - Setup môi trường onStart: Sat Mar 21 16:37:37 GMT+07:00 2026
+[INFO] 21-03-2026 16:37:41 [main] LogUtils - Bắt đầu chạy test case: loginFailWithNullFields
+[INFO] 21-03-2026 16:37:42 [main] LogUtils - 
+[INFO] 21-03-2026 16:37:43 [main] LogUtils - 🌎 Open URL:  https://crm.anhtester.com/admin/authentication
+[ERROR] 21-03-2026 16:37:54 [main] LogUtils - Test case loginFailWithNullFields is failed.
+[ERROR] 21-03-2026 16:37:54 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element Visible. By.xpath: //input[@id='email']
+[INFO] 21-03-2026 16:37:56 [main] LogUtils - Kết thúc bộ test: Sat Mar 21 16:37:56 GMT+07:00 2026
+[INFO] 21-03-2026 16:37:56 [main] LogUtils - Test Total: 1
+[INFO] 21-03-2026 16:37:56 [main] LogUtils - Test Passed Total: 0
+[INFO] 21-03-2026 16:37:56 [main] LogUtils - Test Failed Total: 1
+[INFO] 21-03-2026 16:37:56 [main] LogUtils - Test Skipped Total: 0

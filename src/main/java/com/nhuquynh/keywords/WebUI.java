@@ -2,6 +2,7 @@ package com.nhuquynh.keywords;
 
 import com.nhuquynh.drivers.DriverManager;
 import com.nhuquynh.helpers.PropertiesHelper;
+import com.nhuquynh.utils.LogUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -183,42 +184,42 @@ public class WebUI {
     public static void openURL(String url) {
         DriverManager.getDriver().get(url);
         sleep(STEP_TIME);
-        logConsole("\uD83C\uDF0E " +"Open URL:  " + url);
+        LogUtils.info("\uD83C\uDF0E " +"Open URL:  " + url);
     }
 
     public static void clickElement(By by) {
         waitForElementClickable(by);
         sleep(STEP_TIME);
         getWebElement(by).click();
-        logConsole("Click on element " + by);
+        LogUtils.info("Click on element " + by);
     }
 
     public static void clickElement(By by, int timeout) {
         waitForElementClickable(by, timeout);
         sleep(STEP_TIME);
         getWebElement(by).click();
-        logConsole("Click on element " + by);
+        LogUtils.info("Click on element " + by);
     }
 
     public static void clearText(By by) {
         sleep(STEP_TIME);
         waitForElementVisible(by);
         getWebElement(by).clear();
-        logConsole("Clear text on element: " + by);
+        LogUtils.info("Clear text on element: " + by);
     }
 
     public static void setText(By by, String value) {
         waitForElementVisible(by);
         sleep(STEP_TIME);
         getWebElement(by).sendKeys(value);
-        logConsole("Set text " + value + " on element " + by);
+        LogUtils.info("Set text " + value + " on element " + by);
     }
 
     public static String getElementText(By by) {
         waitForElementVisible(by);
-        logConsole("Get text of element " + by);
+        LogUtils.info("Get text of element " + by);
         String text = getWebElement(by).getText();
-        logConsole("==> TEXT: " + text);
+        LogUtils.info("==> TEXT: " + text);
         return text; //Trả về một giá trị kiểu String
     }
 
